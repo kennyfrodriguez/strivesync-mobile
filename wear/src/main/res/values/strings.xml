@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StriveSync</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="steps">Steps</string>
+    <string name="emergency">Emergency</string>
+    <string name="health">Health</string>
+</resources>
+

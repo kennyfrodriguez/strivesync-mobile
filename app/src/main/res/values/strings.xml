@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StriveSync</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="health_check">Health Check</string>
+    <string name="ai_advice">AI Advice</string>
+    <string name="profile">Profile</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="steps">Steps</string>
+    <string name="sleep">Sleep</string>
+    <string name="emergency_sos">Emergency SOS</string>
+    <string name="symptom_checker">Symptom Checker</string>
+    <string name="medication_reminders">Medication Reminders</string>
+    <string name="health_metrics">Health Metrics</string>
+    <string name="ai_consultation">AI Consultation</string>
+</resources>
+
