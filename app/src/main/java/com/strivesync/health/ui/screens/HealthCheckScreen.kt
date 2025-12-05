@@ -15,6 +15,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.strivesync.health.data.models.HealthStatus
 import com.strivesync.health.ui.theme.*
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -219,12 +220,12 @@ fun VitalSignItem(
 }
 
 @Composable
-fun HealthReadingItem(time: String, heartRate: String, status: com.strivesync.health.data.models.HealthStatus) {
+fun HealthReadingItem(time: String, heartRate: String, status: HealthStatus) {
     val statusColor = when (status) {
-        com.strivesync.health.data.models.HealthStatus.EXCELLENT -> HealthExcellent
-        com.strivesync.health.data.models.HealthStatus.GOOD -> HealthGood
-        com.strivesync.health.data.models.HealthStatus.WARNING -> HealthWarning
-        com.strivesync.health.data.models.HealthStatus.DANGER -> HealthDanger
+        HealthStatus.EXCELLENT -> HealthExcellent
+        HealthStatus.GOOD -> HealthGood
+        HealthStatus.WARNING -> HealthWarning
+        HealthStatus.DANGER -> HealthDanger
     }
     
     Card(

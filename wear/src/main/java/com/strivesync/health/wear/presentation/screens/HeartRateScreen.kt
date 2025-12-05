@@ -5,15 +5,14 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.wear.compose.foundation.CurvedTextStyle
 import androidx.wear.compose.foundation.lazy.ScalingLazyColumn
 import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
 import androidx.wear.compose.material.*
+import com.strivesync.health.wear.presentation.theme.HealthDanger
 import com.strivesync.health.wear.presentation.theme.HealthExcellent
 import com.strivesync.health.wear.presentation.theme.HealthGood
 import kotlinx.coroutines.delay

@@ -1,8 +1,11 @@
 package com.strivesync.health.wear.presentation.screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -108,13 +111,22 @@ fun ActivityScreen() {
                             
                             Spacer(modifier = Modifier.height(4.dp))
                             
-                            LinearProgressIndicator(
-                                progress = 0.85f,
+                            // Custom progress bar for Wear OS
+                            Box(
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .height(4.dp),
-                                color = PrimaryBlue
-                            )
+                                    .height(4.dp)
+                                    .clip(RoundedCornerShape(2.dp))
+                                    .background(PrimaryBlue.copy(alpha = 0.3f))
+                            ) {
+                                Box(
+                                    modifier = Modifier
+                                        .fillMaxWidth(0.85f)
+                                        .fillMaxHeight()
+                                        .clip(RoundedCornerShape(2.dp))
+                                        .background(PrimaryBlue)
+                                )
+                            }
                         }
                     }
                 }

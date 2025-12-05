@@ -22,7 +22,7 @@ import com.strivesync.health.ui.theme.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DashboardScreen(navController: NavController) {
+fun DashboardScreen(@Suppress("UNUSED_PARAMETER") navController: NavController) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
@@ -186,7 +186,7 @@ fun DashboardScreen(navController: NavController) {
 @Composable
 fun HealthStatusCard(
     status: HealthStatus,
-    statusText: String,
+    @Suppress("UNUSED_PARAMETER") statusText: String,
     insight: String
 ) {
     val statusColor = when (status) {
@@ -232,7 +232,7 @@ fun HealthStatusCard(
                         color = TextSecondary
                     )
                     Text(
-                        text = status.name.lowercase().capitalize(),
+                        text = status.name.lowercase().replaceFirstChar { it.titlecase() },
                         style = MaterialTheme.typography.headlineSmall,
                         color = statusColor,
                         fontWeight = FontWeight.Bold
